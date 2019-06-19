@@ -2,10 +2,9 @@ package main
 
 import (
 	"github.com/astaxie/beego"
-	"rs-engine/rs-server/controllers"
+	_ "rs-engine/rs-server/routers"
 )
 
 func main() {
-	beego.Router("/", &controllers.ApiController{}, "get:Version")
 	beego.Run()
 }
